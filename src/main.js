@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
     if(breakgame === 1) {
-        image(game.gameoverImg, 0, 0, this.width, this.height)
+        image(game.startImg, 0, 0, this.width, this.height)
         document.querySelector("#score").style.display = "none"
     } else if(breakgame == 0) {
         game.drawingGame()
@@ -25,6 +25,7 @@ function draw() {
     } else if (breakgame != 0) {
         console.log("Teste")
         image(game.gameoverImg, 0, 0, this.width, this.height); 
+        document.querySelector("#score").style.display = "none";
 
     }
     

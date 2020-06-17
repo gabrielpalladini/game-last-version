@@ -16,8 +16,8 @@ class Game {
     ];
     this.playerImg = loadImage("assets/player/bird.png");
     this.coinImg = loadImage("assets/coins/BlueFish4.png");
-    this.startImg = loadImage("assets/coins/tile001.png"); 
-    this.gameoverImg = loadImage("assets/coins/tile002.png"); 
+    this.startImg = loadImage("assets/startimage/startimage.jpg"); 
+    this.gameoverImg = loadImage("assets/gameover/gameoverfinal.jpg"); 
   }  
 
   setup() {
@@ -54,7 +54,7 @@ class Game {
       if (obstacle.checkCollision(this.player)) {
         this.points--;
         if(this.points === 0) {
-          breakgame = breakgame + 1;
+          breakgame = breakgame + 2;
       }
       
       return false; 
