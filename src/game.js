@@ -16,7 +16,7 @@ class Game {
     ];
     this.playerImg = loadImage("assets/player/bird.png");
     this.coinImg = loadImage("assets/coins/BlueFish4.png");
-    this.startImg = loadImage("assets/startimage/startimage.jpg"); 
+    this.startImg = loadImage("assets/coins/tile001.png"); 
     this.gameoverImg = loadImage("assets/coins/tile002.png"); 
   }  
 
