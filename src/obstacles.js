@@ -9,13 +9,11 @@ class Obstacles {
 
     checkCollision(player) {
         
-        let gameScore = 0;
         if (this.x + this.width >= player.x &&
         this.x <= player.x + player.width &&
         this.y + this.heigth >= player.y &&
         this.y <= player.y + player.height) {
             return true;
-            gameScore = gameScore + 1;
         } else {
             return false;
         }

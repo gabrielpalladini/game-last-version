@@ -18,7 +18,7 @@ class Game {
     this.coinImg = loadImage("assets/coins/flame.png");
     this.startImg = loadImage("assets/startimage/startimage.jpg"); 
     this.gameoverImg = loadImage("assets/gameover/bozofire02.png");
-    this.score = loadImage("assets/background/5118.jpg"); 
+    this.score = loadImage("assets/background/Untitled_copy-removebg-preview (1).png"); 
   }  
 
   setup() {
@@ -38,7 +38,7 @@ class Game {
  
     // Puts obstacles aleatory
     if (frameCount % 15 === 0) {
-      let randomNumber = random(0, height - 80);
+      let randomNumber = random(0, height - 60);
       this.obstacles.push(new Obstacles(randomNumber));
     }
  
@@ -65,9 +65,11 @@ class Game {
   
     }); 
 
-    text(`Lives: ` + this.points, 1120, 70);
-    textSize(32);
-    image(game.score, 1050, 40, 200, 200);
+    image(game.score, 1000, 0, 300, 200);
+    text(`Lives: ` + this.points, 1070, 110);
+    textSize(35);
+    textStyle(BOLD);
+    
 
     //document.querySelector("#score").innerText=`Lives: ${this.points}`
 
