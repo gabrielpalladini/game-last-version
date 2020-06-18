@@ -10,9 +10,10 @@ body {
   }
 
   .score {
-    font-size: 25px;
+    font-size: 30px;
     float: right;
     align-items: right;
+    display: flex;
     
   }
 

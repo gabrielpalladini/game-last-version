@@ -1,6 +1,6 @@
 class Player {
 constructor() {
-    this.gravity = 0.2;
+    this.gravity = 0.4;
     this.speed = 0;
     this.jumps = 0;
     this.x = 50;
@@ -16,7 +16,7 @@ setupPlayer() {
 jump() {
     this.jumps += 1;
     
-        this.speed = -5;
+        this.speed = -9;
 }
 
 drawingThePlayer() {
