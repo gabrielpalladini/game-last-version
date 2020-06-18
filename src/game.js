@@ -17,7 +17,8 @@ class Game {
     this.playerImg = loadImage("assets/player/bird.png");
     this.coinImg = loadImage("assets/coins/flame.png");
     this.startImg = loadImage("assets/startimage/startimage.jpg"); 
-    this.gameoverImg = loadImage("assets/gameover/bozofire02.png"); 
+    this.gameoverImg = loadImage("assets/gameover/bozofire02.png");
+    this.score = loadImage("assets/background/5118.jpg"); 
   }  
 
   setup() {
@@ -64,8 +65,11 @@ class Game {
   
     }); 
 
-    
-    document.querySelector("#score").innerText=`Lives: ${this.points}`
+    text(`Lives: ` + this.points, 1120, 70);
+    textSize(32);
+    image(game.score, 1050, 40, 200, 200);
+
+    //document.querySelector("#score").innerText=`Lives: ${this.points}`
 
   }
 }
