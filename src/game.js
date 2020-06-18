@@ -15,9 +15,9 @@ class Game {
       // { src: loadImage("assets/background/plx-5.png"), x: 0, speed: 4 },
     ];
     this.playerImg = loadImage("assets/player/bird.png");
-    this.coinImg = loadImage("assets/coins/BlueFish4.png");
+    this.coinImg = loadImage("assets/coins/flame.png");
     this.startImg = loadImage("assets/startimage/startimage.jpg"); 
-    this.gameoverImg = loadImage("assets/gameover/gameoverfinal.jpg"); 
+    this.gameoverImg = loadImage("assets/gameover/bozofire02.png"); 
   }  
 
   setup() {
