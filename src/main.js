@@ -24,7 +24,7 @@ function draw() {
 
     } else if (breakgame != 0) {
         console.log("Teste")
-        image(game.gameoverImg, 0, 0, this.width, this.height); 
+        image(game.gameoverImg, 100, 50, 1100, 500); 
         document.querySelector("#score").style.display = "none";
 
     }
@@ -32,13 +32,14 @@ function draw() {
 }
 
 function keyPressed() {
-    if (keyCode == 32) {
+    if (keyCode == ENTER) {
         game.player.jump();
     }
 
-    if (breakgame != 0 && keyCode === 32) {
+    if (breakgame != 0 && keyCode === ENTER) {
         breakgame = 0;
         game.points = 10;
+        goingBack();    
     }
 
 

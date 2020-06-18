@@ -1,5 +1,5 @@
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "arial", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,13 +9,13 @@ body {
     font-weight: 100;
   }
 
-  .score {
+  /* .score {
     font-size: 30px;
     float: right;
     align-items: right;
     display: flex;
     
   }
-
+ */
 
   
