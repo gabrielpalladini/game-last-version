@@ -22,7 +22,7 @@ class Obstacles {
        }
 
     drawingObstacles() {
-        this.x -= 10;
+        this.x -= 15;
         image(this.img, this.x, this.y, width/25, height/10);
     } 
   

@@ -38,7 +38,7 @@ function keyPressed() {
 
     if (breakgame != 0 && keyCode === 32) {
         breakgame = 0;
-        game.points = 2;
+        game.points = 10;
     }
 
 

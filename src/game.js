@@ -3,7 +3,7 @@ class Game {
     this.background = new Background();
     this.player = new Player();
     this.obstacles = [];
-    this.points=2
+    this.points=10
   }
 
   preloadGame() {
@@ -36,8 +36,8 @@ class Game {
     
  
     // Puts obstacles aleatory
-    if (frameCount % 90 === 0) {
-      let randomNumber = random(0, height - 10);
+    if (frameCount % 15 === 0) {
+      let randomNumber = random(0, height - 80);
       this.obstacles.push(new Obstacles(randomNumber));
     }
  
