@@ -55,7 +55,7 @@ class Game {
       if (obstacle.checkCollision(this.player)) {
         this.points--;
         if(this.points === 0) {
-          breakgame = breakgame + 2;
+          breakgame = 2;
       }
       
       return false; 
